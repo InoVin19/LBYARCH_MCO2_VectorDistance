@@ -15,7 +15,7 @@ The specifications indicate that the main requirement is to correctly calculate 
 ## Comparison and Analysis of Execution Times
 
 ### Execution Time Summary
-![Execution Times](assets/Execution_times.png)
+![Execution Times](assets/Execution_times_fix.png)
 
 [Link to the Sheet](https://docs.google.com/spreadsheets/d/1qO1jesfeVPY6tw_yKOHcHxGn2m07CoyijVqteq5KIDU/edit?usp=sharing)
 

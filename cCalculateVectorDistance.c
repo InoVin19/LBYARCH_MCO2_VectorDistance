@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#define SIZE 
 
 extern void asmCalculateVectorDistance(size_t n, double *x1, double *x2, double *y1, double *y2, double *z);
 
@@ -55,7 +54,7 @@ int main(){
 	}
 
 	printf("\n");
-	printf("Vector Values:\n");
+	printf("Input Vector Values:\n");
 	printf("X1: ");
 	for (i = 0; i < 10; i++) {
 		printf("%.1f, ", x1[i]);

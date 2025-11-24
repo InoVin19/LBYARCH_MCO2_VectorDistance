@@ -12,7 +12,7 @@ asmCalculateVectorDistance:
     mov r15, [rsp + 48]        ; z (result)
     xor rbx, rbx               ; for indexing
 
-loop_start:
+L1:
     ; loading values into registers
     movsd xmm3, [r11+rbx]  
     movsd xmm4, [r12+rbx]  
@@ -33,5 +33,5 @@ loop_start:
     ; loop dec + indexing
     add rbx, 8
     dec r10
-    jnz loop_start      
+    jnz L1      
     ret

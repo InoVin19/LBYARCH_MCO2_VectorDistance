@@ -7,11 +7,11 @@ This project utilizes both C and x86-64 assembly kernels in creating a euclidean
 
 
 ## Project Specifications
-
-// include screenshots here
+![ss1](assets/specs1.png)
+![ss2](assets/specs2.png)
 ## Screenshots of Output
 
-// include screenshots here
+![Output](assets/program_output.png)
 
 ### Correctness Verification
 
@@ -20,7 +20,7 @@ This project utilizes both C and x86-64 assembly kernels in creating a euclidean
 
 ### Execution Time Summary
 
-// image of table
+![Execution Times](assets/Execution_times.png)
 
 ### Performance Interpretation and Conclusions
 ## Instructions to Build and Run program

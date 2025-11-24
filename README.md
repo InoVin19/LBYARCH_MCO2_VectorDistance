@@ -16,8 +16,6 @@ The specifications indicate that the main requirement is to correctly calculate 
 
 ### Execution Time Summary
 
-![Execution Times](assets/Execution_times.png)
-
 [Link to the Sheet](https://docs.google.com/spreadsheets/d/1qO1jesfeVPY6tw_yKOHcHxGn2m07CoyijVqteq5KIDU/edit?usp=sharing)
 
 ### Performance Interpretation and Conclusions

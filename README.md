@@ -21,9 +21,11 @@ The specifications indicate that the main requirement is to correctly calculate 
 [Link to the Sheet](https://docs.google.com/spreadsheets/d/1qO1jesfeVPY6tw_yKOHcHxGn2m07CoyijVqteq5KIDU/edit?usp=sharing)
 
 ### Performance Interpretation and Conclusions
-After running each kernel against vector sizes 2^20, 2^24, and 2^28, there is a clear performance increase when interfacing with x86-64 vs implementing the function in C, as shown consistently by the data. Interestingly, there is a noticeable decrease in speedup as the problem size (n) increases, so while interfacing with x86-assembly is shown to increase the efficiency of the Euclidean distance function, the difference becomes less and less significant the bigger the memory requirement.
+After running each kernel against vector sizes of 2^20, 2^24, and 2^28 30 times, there is a clear performance increase when interfacing with x86-64 compared to implementing the function in C, as consistently shown by the data: interfacing in c showed a 398.61% decrease in average execution time for vector size n = 2^20, a 369.79% decrease for size n = 2^24, and a 344.33% decrease for size n = 2^28. 
 
-This is possibly due to memory wall limitations as the size increases. As n increases, the data that the program needs to access grows larger than the cache size, causing cache misses and requiring the CPU to retrieve data from the main memory. Overall, x86-64 interfacing can significantly boost efficiency for many problems; however, it becomes the programmer's job to assess which cases deem its necessity, and which are better off being programmed natively.
+Interestingly, there is a noticeable decrease in speedup as the problem size (n) increases, with the improvement of execution time lessening by 28.83% when the problem size increases from 2^20 to 2^24, and 25.45% when increased from 2^24 - 2^28, so while interfacing with x86-assembly is shown to improve the efficiency of the Euclidean distance function, the difference becomes less and less significant the bigger the memory requirement.
+
+This is likely due to memory wall limitations as the size increases. As n increases, the data that the program needs to access grows larger than the cache size, causing cache misses and requiring the CPU to retrieve data from the main memory. Overall, x86-64 interfacing can significantly boost efficiency for many problems; however, it becomes the programmer's job to assess which cases necessitate its use and which are better off being programmed without any interfacing.
 
 ## Instructions to Build and Run Program
 

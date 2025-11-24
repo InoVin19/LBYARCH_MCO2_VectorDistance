@@ -135,7 +135,6 @@ int main(){
 
 	printf("Difference (C - ASM): %.8fs\n", timeC24 - timeASM24);
 	printf("Speedup (C/ASM): %.2f\n", timeC24 / timeASM24);
-	printf("\n");
 
 	//--------------------------------------------------- n = 2^28 ---------------------------------------------------//
 	n = n28;
